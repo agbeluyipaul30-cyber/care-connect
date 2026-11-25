@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARE-CONNECT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+        <h2>CARE CONNECT</h2>
+        <ul>
+            <a href="#home"><li>Home</li></a>
+            <a href="#services"><li>Services</li></a>
+            <a href="#doctors"><li>Doctors</li></a>
+            <a href="#appointment"><li>Appointment</li></a>
+        </ul>    
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>YOUR HEALTH OUR PRIORITY</h1>
+            <p>Connect with healthcare proessionals online from the comfort of your home.</p>
+            <a href="#appointment" class="btn">Request an Appointment</a>
+        </div>
+    </section>
+
+    <section id="services" class="service">
+        <h2>OUR SERVICES</h2>
+        <div class="service-container">
+            <div class="service-card">
+                <h3>ONLINE CONSULTATION</h3>
+                <p>Speak with health care professionals</p>
+            </div>
+            <div class="service-card">
+                <h3>GENERAL HEALTH ADVICE</h3>
+                <p>Receive general guidiance about maintaining your health</p>
+            </div>
+            <div class="service-card">
+                <h3>FOLLOW UP APPOINTMENT</h3>
+                <p>Stay connected with health care professional for follow up support</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="doctors" class="doctor">
+        <h2>MEET OUR DOCTORS</h2>
+        <div class="doctor-container">
+            <div class="doctor-card">
+                <h3>DR.JONES</h3>
+                <p>General Practices</p>
+            </div>
+            <div class="doctor-card">
+                <h3>DR.MIKE</h3>
+                <p>Cardiology</p>
+            </div>
+            <div class="doctor-card">
+                <h3>DR.KATE</h3>
+                <p>Pediatrics</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="appointment" id="appointment">
+        <div class="appointment">
+            <form action="FULLNAME" method="POST">
+                <label for="FULLNAME">Full Name:</label>
+             <input type="text" id="FULLNAME" name="FULLNAME" required>
+            </form>
+            <br>
+            <form action="EMAIL-ADDRESS" method="POST">
+                <label for="EMAIL-ADDRESS">Email:</label>
+                <input type="email" id="EMAIL-ADDRESS" name="EMAIL-ADDRESS" required>
+            </form>
+            <br>
+            <form action="TELEPHONE" method="POST">
+                <label for="TELEPHONE">Telephone:</label>
+                <input type="tel" id="TELEPHONE" name="TELEPHONE" required>
+            </form>
+            <br>
+            <form action="APPOINTMENT DATE" method="post">
+                <label for="APPOINTMENT DATE">APPOINTMENT DATE</label>
+                <input type="DATE" name="APPOINTMENT DATE" required>
+            </form>
+            <br>
+            <form action="APPOINTMENT TIME" method="post">
+                <label for="APPOINTMENT TIME">APPOINTMENT TIME</label>
+                <input type="TIME" name="APPOINTMENT TIME" required>
+            </form>
+            <br>
+            <form action="AGE" method="POST">
+                <label for="AGE">Age:</label>
+                <input type="date" id="AGE" name="AGE" required>
+            </form>
+            <br>
+            <div class="gender-options">
+                    <label class="gender-option">
+                        <input type="radio" name="gender" value="male">
+                        Male
+                    </label>
+                    <label class="gender-option">
+                        <input type="radio" name="gender" value="female">
+                        Female
+                    </label>
+            </div>
+            <button class="book">BOOK APPOINTMENT</button>
+        </div>
+    </section>
+
+
+    <footer>
+        <h3>CARE CONNECT</h3>
+        <p>Making health information and support more accessible</p>
+        <p>&copy;2026 project by paul agbeluyi</p>
+    </footer>
+
+    <source src="script.js" type="">
+</body>
+</html>
